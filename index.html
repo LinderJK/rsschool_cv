@@ -1,89 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Page Title</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/favicon.png">
-    <meta name="description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
-    <meta name="keywords" content="программирование, курсы, HTML, CSS">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/favicon.png" />
+    <meta
+      name="description"
+      content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля."
+    />
+    <meta name="keywords" content="программирование, курсы, HTML, CSS, CV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/e0ca874b9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header-content">
+            <div class="header-logo"><a href="#">CV</a></div>
+            <nav class="navbar">
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Experience</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Skills</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Education</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Latest Project</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link">Tools</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-
-
-    <header class="header">
-      <div class="header-content container">
-      <a class="header-logo" href="#">CV3</a>
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Experience</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Skills</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Education</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Latest Project</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Tools</a>
-          </li>
-        </ul>
-
-      </nav>
-   
-    </div>
-    </header>
-
-
-    <main>
-
-   
+        <main>
           <div class="container">
             <aside class="aside-block">
               <div class="aside-header">
-                <img src="" >
-                
+                <img src="/img/avatar.jpeg" class="bio-image" />
+                <h1>Slepchenkov Ilya Andreevich</h1>
+                <p>Junior JavaScript Developer</p>
               </div>
 
+              <div class="aside-content">
+                <p class="text-outfit">
+                  I am 28 years old. I am currently working as a technical
+                  support engineer in the field of microelectronics. In my spare
+                  time I study programming languages, read Russian classical
+                  literature and play computer games.
+                </p>
+              </div>
+              <hr class="line" />
 
+              <div class="aside-info сontact">
+                <div class="info-item">
+                  <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <p class="info-title">Email</p>
+                    <p>Slepchenkovia@gmail.com</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <p class="info-title">Github</p>
+                    <p>https://github.com/LinderJK</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon"><i class="fa-brands fa-telegram"></i></div>
+                  <div>
+                    <p class="info-title">Telegram</p>
+                    <p>@LinderJK</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon"><i class="fa-brands fa-discord"></i></div>
+                  <div>
+                    <p class="info-title">Discord</p>
+                    <p>ilya Slepchenkov (@LinderJK)</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <p class="info-title">Address</p>
+                    <p>Zelenograd, Russia</p>
+                  </div>
+                </div>
+              </div>
+              <hr class="line" />
+
+              <div class="aside-info language">
+                <div class="info-item">
+                  <div class="icon">
+                    <img
+                      src="/img/svg/flag-en.svg"
+                      alt="flag russia"
+                      height="25"
+                    />
+                  </div>
+                  <div>
+                    <p>English</p>
+                    <p class="info-title">B1</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="icon">
+                    <img
+                      src="/img/svg/flag-ru.svg"
+                      alt="flag russia"
+                      height="25"
+                    />
+                  </div>
+                  <div>
+                    <p>Russian</p>
+                    <p class="info-title">Native</p>
+                  </div>
+                </div>
+              </div>
             </aside>
-            
-
-
-
-
           </div>
+        </main>
 
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer></footer>
-    
+        <footer></footer>
+      </div>
     </div>
   </body>
 </html>
- 
