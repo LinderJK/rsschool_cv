@@ -1,154 +1,352 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="/favicon.png" />
-    <meta
-      name="description"
-      content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля."
-    />
-    <meta name="keywords" content="программирование, курсы, HTML, CSS, CV" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script
-      src="https://kit.fontawesome.com/e0ca874b9a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <header class="header">
-          <div class="header-content">
-            <div class="header-logo"><a href="#">CV</a></div>
-            <nav class="navbar">
-              <ul class="navbar-list">
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Experience</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Skills</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Education</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Latest Project</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="navbar-link">Tools</a>
-                </li>
-              </ul>
-            </nav>
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/highlight.min.js"></script>
+  <meta name="description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
+  <meta name="keywords" content="программирование, курсы, HTML, CSS, CV">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://kit.fontawesome.com/e0ca874b9a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <div class="header-logo"><a href="#">CV</a></div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#projects" class="navbar-link">Projects</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Education</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#code" class="navbar-link">Code Example</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-information">
+      <aside class="info-block left-info">
+        <div class="aside-header">
+          <img src="/img/photo.png" class="bio-image" alt="cv photo">
+          <h1>Slepchenkov Ilya Andreevich</h1>
+          <p>Beginning Front-End Developer</p>
+        </div>
+        <div class="aside-content">
+          <p>
+            I am 28 years old. I am currently working as a technical support
+            engineer in the field of microelectronics. In my spare time I
+            study programming languages, read Russian classical literature and
+            play computer games.
+          </p>
+        </div>
+        <hr class="line">
+
+        <ul class="aside-info сontact text-outfit" style="padding: 0">
+          <li class="info-item">
+            <div class="icon-contact">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="info-title">Email</p>
+              <p>Slepchenkovia@gmail.com</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <div class="icon-contact">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <p class="info-title">Github</p>
+              <p>https://github.com/LinderJK</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <div class="icon-contact">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div>
+              <p class="info-title">Telegram</p>
+              <p>@LinderJK</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <div class="icon-contact">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <div>
+              <p class="info-title">Discord</p>
+              <p>ilya Slepchenkov (@LinderJK)</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <div class="icon-contact">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="info-title">Address</p>
+              <p>Zelenograd, Russia</p>
+            </div>
+          </li>
+        </ul>
+
+        <hr class="line">
+        <div class="aside-info language text-outfit">
+          <div class="info-item">
+            <div class="icon-contact">
+              <img src="/img/svg/flag-en.svg" alt="flag russia" height="25">
+            </div>
+            <div>
+              <p>English</p>
+              <p class="info-title">B1</p>
+            </div>
           </div>
-        </header>
 
-        <main>
-          <div class="container">
-            <aside class="aside-block">
-              <div class="aside-header">
-                <img src="/img/avatar.jpeg" class="bio-image" />
-                <h1>Slepchenkov Ilya Andreevich</h1>
-                <p>Junior JavaScript Developer</p>
-              </div>
+          <div class="info-item">
+            <div class="icon-contact">
+              <img src="/img/svg/flag-ru.svg" alt="flag russia" height="25">
+            </div>
+            <div>
+              <p>Russian</p>
+              <p class="info-title">Native</p>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-              <div class="aside-content">
-                <p class="text-outfit">
-                  I am 28 years old. I am currently working as a technical
-                  support engineer in the field of microelectronics. In my spare
-                  time I study programming languages, read Russian classical
-                  literature and play computer games.
+      <div class="info-block right-info">
+
+        <div class="skills">
+          <h2 id="skills">Skills</h2>
+          <ul class="item-experiece" style="padding: 0">
+            <li class="info-item box">
+              <p class="info-title">Engineering skills</p>
+              <div>
+                <p>
+                  Solid understanding of microelectronic principles and
+                  concepts.
+                </p>
+                <p>
+                  Ability to troubleshoot and debug complex circuits and
+                  systems.
+                </p>
+                <p>
+                  Oscilloscopes/signal generators/spectrum analyzers and over.
                 </p>
               </div>
-              <hr class="line" />
-
-              <div class="aside-info сontact">
-                <div class="info-item">
-                  <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                  <div>
-                    <p class="info-title">Email</p>
-                    <p>Slepchenkovia@gmail.com</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div class="icon"><i class="fa-brands fa-github"></i></div>
-                  <div>
-                    <p class="info-title">Github</p>
-                    <p>https://github.com/LinderJK</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div class="icon"><i class="fa-brands fa-telegram"></i></div>
-                  <div>
-                    <p class="info-title">Telegram</p>
-                    <p>@LinderJK</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div class="icon"><i class="fa-brands fa-discord"></i></div>
-                  <div>
-                    <p class="info-title">Discord</p>
-                    <p>ilya Slepchenkov (@LinderJK)</p>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <div class="icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div>
-                    <p class="info-title">Address</p>
-                    <p>Zelenograd, Russia</p>
-                  </div>
-                </div>
+            </li>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">85%</div>
+            </div>
+            <li class="info-item box">
+              <p class="info-title">Web skills</p>
+              <div>
+                <p>
+                    HTML
+                </p>
+                <p>
+                  CSS
+                </p>
+                <p>
+                  JavaScript
+                </p>
               </div>
-              <hr class="line" />
-
-              <div class="aside-info language">
-                <div class="info-item">
-                  <div class="icon">
-                    <img
-                      src="/img/svg/flag-en.svg"
-                      alt="flag russia"
-                      height="25"
-                    />
-                  </div>
-                  <div>
-                    <p>English</p>
-                    <p class="info-title">B1</p>
-                  </div>
-                </div>
-
-                <div class="info-item">
-                  <div class="icon">
-                    <img
-                      src="/img/svg/flag-ru.svg"
-                      alt="flag russia"
-                      height="25"
-                    />
-                  </div>
-                  <div>
-                    <p>Russian</p>
-                    <p class="info-title">Native</p>
-                  </div>
-                </div>
+              <div>
+                <p></p>
               </div>
-            </aside>
+            </li>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">15%
+              </div>
+            </div>
+            <li class="info-item box">
+              <p class="info-title">Design skills</p>
+              <div>
+                <p>Figma</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe illustrator</p>
+              </div>
+            </li>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">40%</div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h2 id="projects">Projects</h2>
+          <!-- Use bootstrap4 so low time-->
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="/img/project1.png" alt="project 1 image">
+              <div class="card-body">
+                <h3 class="card-title">Project 1 - CV</h3>
+                <p>Creating a resume page.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Project 2</h3>
+                <p>Coming soon</p>
+              </div>
+            </div>
           </div>
-        </main>
+        </div>
 
-        <footer></footer>
+        <div class="education">
+          <h2 id="projects">Education</h2>
+          <div class="card">
+            <img src="/img/miet-big-900.jpg" class="card-img-bottom" alt="miet photo">
+            <div class="card-body">
+              <h3>National Research University of Electronic Technology</h3>
+              <p>Graduated from the Faculty of Microdevices and Technical Cybernetics (MPTK) in the direction of
+                training development and operation of radio equipment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="code">
+          <h2 id="code">Code Example</h2>
+          <p>
+            Part of the code from the calculator for calculating the
+            parameters of the dc-dc converter.
+          </p>
+          <div>
+            <pre>
+              <code class="javascript hljs"  style="background-color: transparent;" >
+                      let resistors = [
+                      {
+                        r_name: ".resistor6",
+                        r_input_field: ".in-res6",
+                      },
+                      {
+                        r_name: ".resistor7",
+                        r_input_field: ".in-res7",
+                      },
+                      {
+                        r_name: ".resistor8",
+                        r_input_field: ".in-res8",
+                      },
+                      {
+                        r_name: ".cap4",
+                        r_input_field: ".in-cap4",
+                      },
+                    ];
+
+                    //ANIMATION
+                    resistors.forEach((element) => {
+                      let x = FindElement(element);
+                      x.rinput.addEventListener("focus", function () {
+                        changeClass(x.relem, "add", "r-animate");
+                      });
+                      x.rinput.addEventListener("blur", function () {
+                        changeClass(x.relem, "remove", "r-animate");
+                      });
+                    });
+
+                    function changeClass(nElem, method, animation) {
+                      if (method === "add") {
+                        nElem.classList.add(animation);
+                      } else {
+                        nElem.classList.remove(animation);
+                      }
+                    }
+
+                    // FIND_ALL_RES
+                    function FindElement(element) {
+                      let svg = document.querySelector(".svg").getSVGDocument();
+                      let resObj = svg.querySelector(element.r_name);
+                      let resInputObj = document.querySelector(element.r_input_field);
+
+                      return {
+                        relem: resObj,
+                        rinput: resInputObj,
+                      };
+                    }
+
+                    //CHOISE_CALC
+                    let select = document.getElementById("dd");
+                    console.log(select);
+                    let cards = document.querySelectorAll(".card-hide");
+                    console.log(cards);
+                    let lastIndex = 0;
+                    document.getElementById("dd").selectedIndex = "0";
+
+                    select.addEventListener("change", function () {
+                      cards[lastIndex].classList.add("d-none");
+                      let index = select.selectedIndex;
+                      cards[index].classList.remove("d-none");
+                      lastIndex = index;
+
+                      let c = document.getElementById("svg-card1");
+                      let a = document.getElementById("svg-card2");
+                      if (index == 2) {
+                        c.classList.add("d-none");
+                        a.classList.remove("d-none");
+                        console.log(c);
+                      } else {
+                        c.classList.remove("d-none");
+                        a.classList.add("d-none");
+                      }
+                    });
+
+                    //CALC_1
+                    let CalcForm1 = document.forms.calcUout;
+                    let inputR6 = CalcForm1.elements.R6;
+                    let inputR7 = CalcForm1.elements.R7;
+
+                    CalcForm1.oninput = function () {
+                      let a = inputR6.value;
+                      let b = inputR7.value;
+                      let out = a / b + 1;
+                      let outFix = out.toFixed(3);
+                      document.getElementById("output-V").innerHTML = outFix;
+                    };  
+              </code>
+            </pre>
+          </div>
+        </div>
       </div>
-    </div>
-  </body>
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+  </div>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      document.querySelectorAll("pre code").forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+</body>
+
 </html>
