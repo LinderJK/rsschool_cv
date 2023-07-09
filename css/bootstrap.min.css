@@ -1,3 +1,11 @@
+
+:root {
+  --card-back:#534E63;
+  --card-border: rgba(223, 24, 24, 0.125);
+  --progress-back: #0789b1;
+  --progress-text: #e2e6ee;
+}
+
 .card {
     position: relative;
     display: -webkit-box;
@@ -9,9 +17,9 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #534E63;
+    background-color: var(--card-back);
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid var(--card-border);
     border-radius: 0.25rem;
   }
   .card > hr {
@@ -62,8 +70,8 @@
   }
   .card-footer {
     padding: 0.75rem 1.25rem;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(124, 14, 14, 0.03);
+    border-top: 1px solid rgba(207, 26, 26, 0.125);
   }
   .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -277,9 +285,9 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #fff;
+    color: var(--progress-text);
     text-align: center;
-    background-color: #0789b1;
+    background-color: var(--progress-back);
     transition: width 0.6s ease;
   }
   .progress-bar-striped {

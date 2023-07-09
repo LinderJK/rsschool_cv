@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="icon" href="/favicon.png">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <meta name="description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
   <meta name="keywords" content="программирование, курсы, HTML, CSS, CV">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+  <script src="/js/main.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
               <a href="#projects" class="navbar-link">Projects</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">Education</a>
+              <a href="#education" class="navbar-link">Education</a>
             </li>
             <li class="navbar-item">
               <a href="#code" class="navbar-link">Code Example</a>
@@ -60,7 +61,7 @@
         </div>
         <hr class="line">
 
-        <ul class="aside-info сontact text-outfit" style="padding: 0">
+        <ul class="aside-info сontact text-outfit">
           <li class="info-item">
             <div class="icon-contact">
               <i class="fa-solid fa-envelope"></i>
@@ -109,8 +110,8 @@
         </ul>
 
         <hr class="line">
-        <div class="aside-info language text-outfit">
-          <div class="info-item">
+        <ul class="aside-info language text-outfit">
+          <li class="info-item">
             <div class="icon-contact">
               <img src="/img/svg/flag-en.svg" alt="flag russia" height="25">
             </div>
@@ -118,9 +119,9 @@
               <p>English</p>
               <p class="info-title">B1</p>
             </div>
-          </div>
+          </li>
 
-          <div class="info-item">
+          <li class="info-item">
             <div class="icon-contact">
               <img src="/img/svg/flag-ru.svg" alt="flag russia" height="25">
             </div>
@@ -128,69 +129,84 @@
               <p>Russian</p>
               <p class="info-title">Native</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </aside>
 
       <div class="info-block right-info">
-
         <div class="skills">
           <h2 id="skills">Skills</h2>
-          <ul class="item-experiece" style="padding: 0">
-            <li class="info-item box">
-              <p class="info-title">Engineering skills</p>
-              <div>
+
+          <div class="info-item box-right">
+            <p class="info-title skill">Engineering skills</p>
+            <ul>
+              <li>
                 <p>
                   Solid understanding of microelectronic principles and
                   concepts.
                 </p>
+              </li>
+              <li>
                 <p>
                   Ability to troubleshoot and debug complex circuits and
                   systems.
                 </p>
+              </li>
+              <li>
                 <p>
                   Oscilloscopes/signal generators/spectrum analyzers and over.
                 </p>
-              </div>
-            </li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">85%</div>
+              </li>
+            </ul>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100"> 85%
             </div>
-            <li class="info-item box">
-              <p class="info-title">Web skills</p>
-              <div>
-                <p>
-                    HTML
-                </p>
-                <p>
-                  CSS
-                </p>
-                <p>
-                  JavaScript
-                </p>
-              </div>
-              <div>
-                <p></p>
-              </div>
-            </li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">15%
-              </div>
+          </div>
+
+          <div class="info-item box-right">
+            <p class="info-title skill">Web skills</p>
+            <ul>
+              <li>
+                <p>HTML</p>
+              </li>
+              <li>
+                <p>CSS</p>
+              </li>
+              <li>
+                <p>JavaScript</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100">15%
             </div>
-            <li class="info-item box">
-              <p class="info-title">Design skills</p>
-              <div>
+          </div>
+
+          <div class="info-item box-right">
+            <p class="info-title skill">Design skills</p>
+            <ul>
+              <li>
                 <p>Figma</p>
+              </li>
+              <li>
                 <p>Adobe Photoshop</p>
+              </li>
+              <li>
                 <p>Adobe illustrator</p>
-              </div>
-            </li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">40%</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100">
+              40%
             </div>
-          </ul>
+          </div>
         </div>
 
         <div class="project">
@@ -205,7 +221,7 @@
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top">
+              <img class="card-img-top" src="" alt="project 2 image">
               <div class="card-body">
                 <h3 class="card-title">Project 2</h3>
                 <p>Coming soon</p>
@@ -215,13 +231,16 @@
         </div>
 
         <div class="education">
-          <h2 id="projects">Education</h2>
+          <h2 id="education">Education</h2>
           <div class="card">
             <img src="/img/miet-big-900.jpg" class="card-img-bottom" alt="miet photo">
             <div class="card-body">
               <h3>National Research University of Electronic Technology</h3>
-              <p>Graduated from the Faculty of Microdevices and Technical Cybernetics (MPTK) in the direction of
-                training development and operation of radio equipment.</p>
+              <p>
+                Graduated from the Faculty of Microdevices and Technical
+                Cybernetics (MPTK) in the direction of training development
+                and operation of radio equipment.
+              </p>
             </div>
           </div>
         </div>
@@ -331,13 +350,24 @@
     </main>
 
     <footer>
-
-
-
+      <div class="footer">
+        <div class="footer-item rsschool-logo">
+          <a href="https://rs.school/js/"> <img src="/img/rs_school_js.svg" height="45" alt="rsschool-logo"></a>
+        </div>
+        <div class="footer-item copyright">
+          <p>2023</p>
+        </div>
+        <a href="https://github.com/LinderJK/rsschool-cv">
+          <div class="footer-item github-link">
+            <img src="/img/github-f.png" height="45" alt="github-logo"> Github
+          </div>
+        </a>
+        <!-- <div class="to-top">
+          <p>Go Up</p>
+        </div> -->
+      </div>
     </footer>
   </div>
-
-
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script>
