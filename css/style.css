@@ -10,11 +10,11 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-card);
 }
 
 a:hover {
-  color: var(--link);
+  color: var(--text);
 }
 
 h1,
@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
   line-height: 35px;
-  color: var(--text);
+  color: var(--text-card);
 }
 
 ol,
@@ -75,7 +75,7 @@ p {
 
 /*........HEADER......................*/
 .header {
-  
+
   z-index: 50;
   background-color: var(--header);
   padding: 10px;
@@ -99,9 +99,7 @@ p {
 .navbar {
   margin: 0 10px;
   font-size: 22px;
- 
-  
-  
+
 }
 
 .navbar-list {
@@ -110,9 +108,9 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  
-  
+
 }
+
 .navbar-item {
   margin: 0 50px 0 0;
   padding: 10px;
@@ -128,8 +126,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: start;
-  
-  
+
 }
 
 @media (max-width: 992px) {
@@ -148,14 +145,13 @@ p {
   padding: 15px;
   word-break: break-word;
   max-width: 100%;
-  
+
 }
 
 /*........LEFT......................*/
 .left-info {
   background: var(--gradient-aside);
-  
-  
+
 }
 
 @media (min-width: 990px) {
@@ -186,13 +182,14 @@ p {
 .info-title {
   color: var(--gray-light);
   font-size: 16px;
-  
+
 }
 
 .bio-image {
   /* vertical-align: middle; */
   border-radius: 100%;
   width: 150px;
+
 }
 
 /*........RIGHT.....................*/
@@ -204,11 +201,8 @@ p {
 .box-right {
   background-color: var(--gray-darker);
   padding: 15px;
-  
-  
-  
-}
 
+}
 
 .skill {
   padding: 0px 10px;
@@ -229,19 +223,17 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: var(--header);
-  
-  
+
 }
+
 .footer-item {
   flex-basis: auto;
   margin: 10px;
   padding: 10px;
   width: 150px;
   align-items: center;
-  
+
 }
-
-
 
 /*........TEXT.....................*/
 .text-outfit {
@@ -250,6 +242,9 @@ p {
 
 .copyright {
   text-align: center;
+  color: var(--text-card);
+  font-weight: bold;
+
 }
 
 .text-decoration {
@@ -262,36 +257,33 @@ p {
 }
 
 .link-animate {
-
-  border-bottom: solid 5px var(--header);  
-  transform: scaleX(0);  
+  border-bottom: solid 5px var(--header);
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 
 /*........COLOR....................*/
 :root {
   --text: #e2e6ee;
-  --link: #0789b1;
-  --header: #70e0e0;
-  --background: #232339;
-  --gray-light: #acb1c3;
-  --gray-darker: #534E63;
-
+  --text-card: #232339;
+  --link: #c2a570;
+  --header: #c2a570;
+  --background: #19192e;
+  --gray-light: #c2a570;
+  --gray-darker: #4e4861;
   /* --color-aside: black; */
-
   --gradient-aside:
     radial-gradient(circle at 50% 0,
       rgb(17, 10, 49),
-      rgba(255, 0, 0, 0) 70.71%),
+      rgba(255, 0, 0, 0.062) 70.71%),
     radial-gradient(circle at 6.7% 75%,
-      rgb(0, 0, 2),
+      rgb(11, 11, 56),
       rgba(0, 0, 255, 0) 70.71%),
     radial-gradient(circle at 93.3% 75%,
-      rgb(3, 7, 56),
+      rgb(7, 9, 37),
       rgba(0, 255, 0, 0) 70.71%) beige;
   border-radius: 50%;
 }
-
 
 /* .to-top {
   position: fixed;

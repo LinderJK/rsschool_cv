@@ -1,9 +1,10 @@
 
 :root {
-  --card-back:#534E63;
-  --card-border: rgba(223, 24, 24, 0.125);
-  --progress-back: #0789b1;
-  --progress-text: #e2e6ee;
+  --card-back:#c2a570;
+  --card-border: #c2a570;
+  --progress-back: #c2a570;
+  --progress-text: #232339;
+
 }
 
 .card {
@@ -42,6 +43,7 @@
   }
   .card-title {
     margin-bottom: 0.75rem;
+    color: var(--progress-text);
   }
   .card-subtitle {
     margin-top: -0.375rem;
