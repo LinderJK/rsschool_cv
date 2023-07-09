@@ -117,10 +117,6 @@ p {
 
 }
 
-/* .navbar-link {
-  color: var(--color-text);
-} */
-
 /*........MAIN......................*/
 .main-information {
   display: flex;
@@ -186,7 +182,6 @@ p {
 }
 
 .bio-image {
-  /* vertical-align: middle; */
   border-radius: 100%;
   width: 150px;
 
@@ -271,7 +266,6 @@ p {
   --background: #19192e;
   --gray-light: #c2a570;
   --gray-darker: #4e4861;
-  /* --color-aside: black; */
   --gradient-aside:
     radial-gradient(circle at 50% 0,
       rgb(17, 10, 49),
@@ -284,19 +278,3 @@ p {
       rgba(0, 255, 0, 0) 70.71%) beige;
   border-radius: 50%;
 }
-
-/* .to-top {
-  position: fixed;
-  color: var(--text);
-  background-color: var(--gray-light);
-  right: 400px;
-  bottom: 0px;
-  padding: 10px;
-  cursor: pointer;
-  display: none;
-
-}
-
-.to-top:hover {
-  background-color: #acb1c3;
-} */
